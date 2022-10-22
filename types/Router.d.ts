@@ -4,6 +4,7 @@ import RouteInstance from "./RouteInstance";
 import NavigatorLocation from "./NavigatorLocation";
 import RouteParams from "./RouteParam";
 import AnyObject from "./AnyObject";
+import Route from "./Route";
 
 declare namespace Router {
 	namespace A11yConfig {
@@ -72,6 +73,10 @@ export interface RouterProps<
 	 * Analougus to the `Route`s `primary` prop.
 	 */
 	primary?: boolean;
+	/**
+	 * test
+	 */
+	activeRoute?: Route;
 	/**
 	 * Configuration object for Svelte Navigators accessibility features.
 	 */

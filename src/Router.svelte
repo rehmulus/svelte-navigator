@@ -59,8 +59,8 @@
 		? routerContext.disableInlineStyles
 		: disableInlineStyles;
 
-	const routes = writable([]);
-	const activeRoute = writable(null);
+	export const routes = writable([]);
+	export let activeRoute = writable(null);
 	// Used in SSR to synchronously set that a Route is active.
 	let hasActiveRoute = false;
 
